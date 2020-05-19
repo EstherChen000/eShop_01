@@ -1,20 +1,23 @@
+/*----------CssReset----------*/
 * {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 
-.block-img, .block, .container {
+html, body, .demo {
+  height: 100%;
+}
+
+/*----------Extend----------*/
+.block-img, .block, .container, .user {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main {
-  background-color: #9fe0d7;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20 20'%3E%3Cg %3E%3Cpolygon fill='%23eeedff' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23eeedff' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
-}
-
+/*----------header----------*/
 .navbar {
   display: flex;
   width: 100%;
@@ -22,6 +25,7 @@ main {
   top: 0;
   left: 0;
   background-color: #fff;
+  height: 8%;
 }
 
 .toggle {
@@ -38,6 +42,63 @@ main {
   font-size: 3em;
 }
 
+/*----------main----------*/
+main {
+  background-color: #9fe0d7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20 20'%3E%3Cg %3E%3Cpolygon fill='%23eeedff' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23eeedff' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/*----------side-menu----------*/
+.side-menu {
+  background-color: #fff;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 8%;
+  left: -20%;
+  transition: all 0.5s ease;
+}
+
+.side-menu-click {
+  left: 0%;
+  transition: all 0.5s ease;
+  position: fixed;
+  z-index: 10;
+}
+
+.user {
+  flex-direction: column;
+}
+
+.user-photo img {
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.user-name {
+  color: #333;
+  padding-top: 1em;
+}
+
+.side-nav-item {
+  padding: 1em;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5em;
+  color: #333;
+}
+.side-nav-item a {
+  color: #333;
+}
+.side-nav-item a i {
+  padding-right: 1em;
+}
+.side-nav-item ul {
+  padding-left: 2em;
+}
+
+/*----------container----------*/
 .container {
   width: 80%;
   height: 100%;
@@ -83,6 +144,12 @@ main {
 
 .style-info {
   background-color: #eee;
+}
+
+/*----------footer----------*/
+.raw {
+  background-color: #9fe0d7;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
