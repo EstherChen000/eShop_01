@@ -11,7 +11,7 @@ html, body, .demo {
 }
 
 /*----------Extend----------*/
-.block-img, .block, .container, .user {
+.block-goods-img, .block-img, .block, .container, .user {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,6 +144,57 @@ main {
 
 .style-info {
   background-color: #eee;
+}
+
+.block-goods {
+  display: none;
+}
+
+.block-goods:target {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF;
+  display: flex;
+}
+
+.block-goods-img {
+  width: 100%;
+  margin: auto;
+  z-index: 50;
+}
+.block-goods-img img {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.block-goods-info {
+  background-color: #FFF;
+  font-size: 2em;
+  padding: 2em;
+  z-index: 50;
+}
+
+/* Close button */
+.close {
+  position: relative;
+  display: block;
+}
+
+/* Lightbox overlay */
+.close::before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.6);
+  content: "";
+  cursor: default;
+  z-index: 1;
 }
 
 /*----------footer----------*/
