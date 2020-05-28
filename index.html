@@ -63,7 +63,7 @@
                         </div>
                         <div class="block-info-btn">
                             <div class="btn-like"><i class="fas fa-heart"></i></div>
-                            <div class="btn-cart"><i class="fas fa-cart-plus"></i></div>
+                            <div class="btn-cart"><a href="cart-info"><i class="fas fa-cart-plus"></i></a></div>
                         </div>
                     </div>
                     
@@ -165,15 +165,62 @@
                         <div class="block-goods-info-txt">something</div>
                         <div class="block-goods-info-btn">
                             <div class="btn-goods-like"><i class="fas fa-heart"></i></div>
-                            <div class="btn-goods-cart"><i class="fas fa-cart-plus"></i></div>
+                            <div class="btn-cart"><a href="cart-info"><i class="fas fa-cart-plus"></i></a></div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- 購物車商品資訊頁 -->
+            <div class="cart-info" id="cart-info">
+                <a href="#" class="close"></a>
+                <div class="block-cart-info">
+                    <div class="block-img-up">
+                        <img src="https://picsum.photos/300/200/?random=1">
+                    </div>
+                    <div class="block-info-c style-info">
+                        <div class="block-info-txt">
+                            <a href="#example">something</a>
+                            <p>Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit. Ea, minus.
+                            </p>
+                        </div>
+                        <div class="block-info-btn">
+                            <button><a href=""><i class="fas fa-heart"></i> 加入追蹤清單</a></button>
+                            <button><a href=""><i class="far fa-trash-alt"></i> 從購物車刪除</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <div class="total-text">
+                        總共<span>1</span>件商品  共<span>100</span>元
+                    </div>
+                    <div class="block-info-btn">
+                        <button><a href="#">結帳</a></button>
+                        <button><a href="#">繼續購物</a></button>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+
+            
         </main>
+
+        <!-- 頁尾 -->
         <footer>
+            <!-- 固定購物車捷徑 -->
+            <div class="fix-cart">
+                <div class="num-goods">1</div>
+                <div class="btn-cart-c">
+                    <a href="#cart-info"><i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+
             <div class="raw">
-                copy
+                &copy; 2020 Esther
             </div>
         </footer>
     </div>

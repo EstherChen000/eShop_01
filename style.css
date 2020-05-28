@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*----------CssReset----------*/
 * {
   margin: 0;
@@ -11,7 +12,7 @@ html, body, .demo {
 }
 
 /*----------Extend----------*/
-.block-goods-img, .block-img, .block, .container, .user {
+.num-goods, .fix-cart, .block-img-up, .block-goods-img, .block-img, .block, .container, .user {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +140,7 @@ main {
 .block-info-btn {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 100%;
 }
 
 .style-info {
@@ -197,10 +198,106 @@ main {
   z-index: 1;
 }
 
+/*----------購物車----------*/
+.cart-info {
+  display: none;
+}
+
+.cart-info:target {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  background-color: #d19cc4;
+  display: flex;
+  flex-direction: column;
+}
+
+.block-cart-info {
+  height: 300px;
+  width: 100%;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+  display: flex;
+  border-bottom: 1px solid #aaa;
+}
+
+.block-img-up {
+  width: 100%;
+  z-index: 50;
+}
+.block-img-up img {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.block-info-c {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  z-index: 50;
+}
+
+button {
+  padding: 1rem;
+  margin: 0 1rem;
+  width: 100%;
+  background-color: #536a85;
+}
+
+.total {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  z-index: 50;
+}
+
+.total-text {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
 /*----------footer----------*/
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
 .raw {
   background-color: #9fe0d7;
   text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.fix-cart {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  background-color: #ac1c28;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.num-goods {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  background-color: #b5e239;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.btn-cart-c {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
